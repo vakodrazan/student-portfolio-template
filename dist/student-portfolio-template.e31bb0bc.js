@@ -32106,7 +32106,45 @@ function Header() {
 
 var _default = Header;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../assets/noeline.png":"assets/noeline.png"}],"pages/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../assets/noeline.png":"assets/noeline.png"}],"components/Skills.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Skills() {
+  return /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Front End")), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "HTML"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar-detail progress-bar-html"
+  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "css"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar-detail progress-bar-css"
+  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "SASS"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar-detail progress-bar-sass"
+  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "JAVASCRIPT"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar-detail progress-bar-javascript"
+  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "REACT"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "progress-bar-detail progress-bar-react"
+  })))));
+}
+
+var _default = Skills;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"pages/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32118,15 +32156,17 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Header = _interopRequireDefault(require("../components/Header"));
 
+var _Skills = _interopRequireDefault(require("../components/Skills"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null));
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Skills.default, null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../components/Header":"components/Header.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/Header":"components/Header.js","../components/Skills":"components/Skills.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -32166,7 +32206,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58028" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50108" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
