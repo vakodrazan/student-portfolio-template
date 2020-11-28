@@ -8,6 +8,9 @@ const HeaderStyle = styled.header`
     border-radius: 12px;
     padding: 16px;
 
+    h1 {
+        padding-bottom: 23px;
+    }
     img {
         border-radius: 12px;
     }
@@ -32,7 +35,6 @@ const HeaderStyle = styled.header`
 
     .contact {
         padding-top: 31px;
-        padding-bottom: 34px;
 
         .contact-list {
             display: flex;
@@ -57,6 +59,35 @@ const HeaderStyle = styled.header`
         font-size: 18px;
         color: #828282;
     }
+
+    .header-about {
+        padding-bottom: 34px;
+    }
+
+    @media (min-width: 750px) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        h1 {
+            max-width: 271px;
+            padding: 0;
+            padding-right: 10px; 
+        }
+
+        .header-about {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 37px;
+        }
+
+        .contact {
+            padding: 0;
+        }
+    }
 `;
 
 function Header() {
@@ -65,29 +96,32 @@ function Header() {
             <h1>
                 <img src={noelineImg} alt="Noeline Marie"/>
             </h1>
-            <div>
-                <div className="biography">
-                    <strong>Noeline Marie</strong>
-                    <span>Front-end developer</span>
+            <section>
+
+                <div className="header-about">
+                    <div className="biography">
+                        <strong>Noeline Marie</strong>
+                        <span>Front-end developer</span>
+                    </div>
+                    <ul className="contact">
+                        <li className="contact-list">
+                            <a className="contact-list" href="mailto:noeline.onja@gmail.com">
+                                <i className="ri-mail-fill"></i>
+                                <span>noeline.onja@gmail.com</span>
+                            </a>
+                        </li>
+                        <li className="contact-list">
+                            <i className="ri-phone-fill"></i>
+                            <span>(+261)345 142 810</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul className="contact">
-                    <li className="contact-list">
-                        <a className="contact-list" href="mailto:noeline.onja@gmail.com">
-                            <i className="ri-mail-fill"></i>
-                            <span>noeline.onja@gmail.com</span>
-                        </a>
-                    </li>
-                    <li className="contact-list">
-                        <i className="ri-phone-fill"></i>
-                        <span>(+261)345 142 810</span>
-                    </li>
-                </ul>
-            </div>
-            <div className="info">
-                <p>
-                    Looking forwards to build Looking forwards to build Looking forwards to build
-                </p>
-            </div>
+                <div className="info">
+                    <p>
+                        Looking forwards to build Looking forwards to build Looking forwards to build
+                    </p>
+                </div>
+            </section>
         </HeaderStyle>
     )
 }

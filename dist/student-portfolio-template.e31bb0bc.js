@@ -32065,7 +32065,7 @@ var _noeline = _interopRequireDefault(require("../assets/noeline.png"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: #FFFFFF;\n    border-radius: 12px;\n    padding: 16px;\n\n    img {\n        border-radius: 12px;\n    }\n\n    .biography {\n        display: flex;\n        flex-direction: column;\n\n        strong {\n            font-weight: 600;\n            font-size: 24px;\n            color: #4F4F4F;\n            padding-bottom: 6px;\n        }\n\n        span {\n            color: #828282;\n            font-weight: 500;\n            font-size: 18px;\n        }\n    }\n\n    .contact {\n        padding-top: 31px;\n        padding-bottom: 34px;\n\n        .contact-list {\n            display: flex;\n            flex-direction: row;\n            align-items: center;\n            color: #4F4F4F;\n            font-size: 18px;\n\n            a {\n                padding-bottom: 10px;\n            }\n\n            span {\n                padding-left: 12px;\n                word-break: break-all;\n            }\n        }\n    }\n\n    .info {\n        font-weight: 500;\n        font-size: 18px;\n        color: #828282;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: #FFFFFF;\n    border-radius: 12px;\n    padding: 16px;\n\n    h1 {\n        padding-bottom: 23px;\n    }\n    img {\n        border-radius: 12px;\n    }\n\n    .biography {\n        display: flex;\n        flex-direction: column;\n\n        strong {\n            font-weight: 600;\n            font-size: 24px;\n            color: #4F4F4F;\n            padding-bottom: 6px;\n        }\n\n        span {\n            color: #828282;\n            font-weight: 500;\n            font-size: 18px;\n        }\n    }\n\n    .contact {\n        padding-top: 31px;\n\n        .contact-list {\n            display: flex;\n            flex-direction: row;\n            align-items: center;\n            color: #4F4F4F;\n            font-size: 18px;\n\n            a {\n                padding-bottom: 10px;\n            }\n\n            span {\n                padding-left: 12px;\n                word-break: break-all;\n            }\n        }\n    }\n\n    .info {\n        font-weight: 500;\n        font-size: 18px;\n        color: #828282;\n    }\n\n    .header-about {\n        padding-bottom: 34px;\n    }\n\n    @media (min-width: 750px) {\n        display: flex;\n        flex-direction: row;\n        align-items: flex-start;\n        justify-content: space-between;\n\n        h1 {\n            max-width: 271px;\n            padding: 0;\n            padding-right: 10px; \n        }\n\n        .header-about {\n            display: flex;\n            flex-direction: row;\n            align-items: center;\n            justify-content: space-between;\n            padding-bottom: 37px;\n        }\n\n        .contact {\n            padding: 0;\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32082,7 +32082,9 @@ function Header() {
   return /*#__PURE__*/_react.default.createElement(HeaderStyle, null, /*#__PURE__*/_react.default.createElement("h1", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _noeline.default,
     alt: "Noeline Marie"
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  })), /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "header-about"
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "biography"
   }, /*#__PURE__*/_react.default.createElement("strong", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("span", null, "Front-end developer")), /*#__PURE__*/_react.default.createElement("ul", {
     className: "contact"
@@ -32099,7 +32101,7 @@ function Header() {
     className: "ri-phone-fill"
   }), /*#__PURE__*/_react.default.createElement("span", null, "(+261)345 142 810")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "info"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Looking forwards to build Looking forwards to build Looking forwards to build")));
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Looking forwards to build Looking forwards to build Looking forwards to build"))));
 }
 
 var _default = Header;
