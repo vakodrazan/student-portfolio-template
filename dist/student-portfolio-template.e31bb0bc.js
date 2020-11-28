@@ -32106,7 +32106,183 @@ function Header() {
 
 var _default = Header;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../assets/noeline.png":"assets/noeline.png"}],"components/Skills.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../assets/noeline.png":"assets/noeline.png"}],"assets/front-end-assessment.png":[function(require,module,exports) {
+module.exports = "/front-end-assessment.ebfc0614.png";
+},{}],"assets/front-end-final.png":[function(require,module,exports) {
+module.exports = "/front-end-final.b2ea1d36.png";
+},{}],"assets/game-landing-page.png":[function(require,module,exports) {
+module.exports = "/game-landing-page.ceed66a4.png";
+},{}],"assets/interior-consultant.png":[function(require,module,exports) {
+module.exports = "/interior-consultant.eb403827.png";
+},{}],"assets/my-team-page.png":[function(require,module,exports) {
+module.exports = "/my-team-page.3a9e6095.png";
+},{}],"assets/ghibli-movie-list.png":[function(require,module,exports) {
+module.exports = "/ghibli-movie-list.9774ad30.png";
+},{}],"assets/birthday-app.png":[function(require,module,exports) {
+module.exports = "/birthday-app.c5c90c66.png";
+},{}],"assets/tea-time-topic.png":[function(require,module,exports) {
+module.exports = "/tea-time-topic.9d2a9a30.png";
+},{}],"assets/random-quote.png":[function(require,module,exports) {
+module.exports = "/random-quote.3b789d95.png";
+},{}],"assets/input-component.png":[function(require,module,exports) {
+module.exports = "/input-component.585cb202.png";
+},{}],"assets/button-component.png":[function(require,module,exports) {
+module.exports = "/button-component.a645f472.png";
+},{}],"assets/country-quiz.png":[function(require,module,exports) {
+module.exports = "/country-quiz.daefd461.png";
+},{}],"assets/hit-parade.png":[function(require,module,exports) {
+module.exports = "/hit-parade.b174bdec.png";
+},{}],"pages/designList.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _frontEndAssessment = _interopRequireDefault(require("../assets/front-end-assessment.png"));
+
+var _frontEndFinal = _interopRequireDefault(require("../assets/front-end-final.png"));
+
+var _gameLandingPage = _interopRequireDefault(require("../assets/game-landing-page.png"));
+
+var _interiorConsultant = _interopRequireDefault(require("../assets/interior-consultant.png"));
+
+var _myTeamPage = _interopRequireDefault(require("../assets/my-team-page.png"));
+
+var _ghibliMovieList = _interopRequireDefault(require("../assets/ghibli-movie-list.png"));
+
+var _birthdayApp = _interopRequireDefault(require("../assets/birthday-app.png"));
+
+var _teaTimeTopic = _interopRequireDefault(require("../assets/tea-time-topic.png"));
+
+var _randomQuote = _interopRequireDefault(require("../assets/random-quote.png"));
+
+var _inputComponent = _interopRequireDefault(require("../assets/input-component.png"));
+
+var _buttonComponent = _interopRequireDefault(require("../assets/button-component.png"));
+
+var _countryQuiz = _interopRequireDefault(require("../assets/country-quiz.png"));
+
+var _hitParade = _interopRequireDefault(require("../assets/hit-parade.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _default = [{
+  title: "Sports App",
+  url: "https://vakodrazan.github.io/front-end-assessment/",
+  code: "https://github.com/vakodrazan/front-end-assessment",
+  picture: _frontEndAssessment.default,
+  id: 1604657565372,
+  description: "In this project, I work with HTML and CSS to create a responsive page. This is for practising the use of element."
+}, {
+  title: "Photograph",
+  url: "https://vakodrazan.github.io/front-end-finals/",
+  code: "https://github.com/vakodrazan/front-end-finals",
+  picture: _frontEndFinal.default,
+  id: 1604657574337,
+  description: "In this project, I work with HTML and CSS to create a responsive page. This is for practising the use of element."
+}, {
+  title: "Game landing page",
+  url: "https://vakodrazan.github.io/game-landing-page/",
+  code: "https://github.com/vakodrazan/game-landing-page",
+  picture: _gameLandingPage.default,
+  id: 1604657595703,
+  description: "In this project, I work with HTML and CSS to create a responsive page. This is for practising the use of element."
+}, {
+  title: "Interior Consultant",
+  url: "https://interior-consultants.netlify.app/",
+  code: "https://github.com/vakodrazan/interior-consultant",
+  picture: _interiorConsultant.default,
+  id: 1604657608163,
+  description: "In this project, I work with HTML and SASS to create a responsive page."
+}, {
+  title: "My Team Page",
+  url: "https://my-team-page-design.netlify.app/",
+  code: "https://github.com/vakodrazan/my_team_pages",
+  picture: _myTeamPage.default,
+  id: 1604657622213,
+  description: "In this project, I work with HTML and SASS to create a responsive page."
+}, {
+  title: "Ghibli Movies",
+  url: "https://ghibli-movies-list.netlify.app/",
+  code: "https://github.com/vakodrazan/WKP9",
+  picture: _ghibliMovieList.default,
+  id: 1604657629911,
+  description: "In this project, I work with react it's all about showing the list of Movies that is fetched from an API"
+}, {
+  title: "Birthday APP",
+  url: "https://list-of-birthday-app.netlify.app/",
+  code: "https://github.com/vakodrazan/birthday-app",
+  picture: _birthdayApp.default,
+  id: 1604657646561,
+  description: "In this project, I work with Vanilla Javascript. It is all about, adding a new item to list, deleting and editing"
+}, {
+  title: "Tea Time Topic",
+  url: "https://react-tea-time-topic.netlify.app/",
+  code: "https://github.com/vakodrazan/react-tea-time-topic",
+  picture: _teaTimeTopic.default,
+  id: 1604657656221,
+  description: "In this project, I work with React. It is all about showing the list and separating the list that has been archived and the ones which not."
+}, {
+  title: "Random Quotes Generator",
+  url: "https://random-quotes-generator-react.netlify.app/",
+  code: "https://github.com/vakodrazan/react-random-quote-generator",
+  picture: _randomQuote.default,
+  id: 1604657667989,
+  description: "In this project, I work with React. It's all about fetching the data from an API and shpw the quotes randomly by clicking the button. Going to the list of quotes that are written by the author that has been clicked."
+}, {
+  title: "Input Component",
+  url: "https://input-components.netlify.app/",
+  code: "https://github.com/vakodrazan/input-component",
+  picture: _inputComponent.default,
+  id: 1604657677246,
+  description: "In this project, I work with React. It is all about reusable components and a page displaying all the states."
+}, {
+  title: "Button Component",
+  url: "https://buttons-component.netlify.app/",
+  code: "https://github.com/vakodrazan/react-button",
+  picture: _buttonComponent.default,
+  id: 1604657686375,
+  description: "In this project, I work with React. It is all about reusable components and a page displaying all the states."
+}, {
+  title: "Country Quiz",
+  url: "https://country-quiz-noeline.netlify.app/",
+  code: "https://github.com/vakodrazan/country-quiz",
+  picture: _countryQuiz.default,
+  id: 1604657686675,
+  description: "In this project, I work with React. It is all about fetching data from a API that is not exactly the real API but still go deeper. It showing the question randomly with the choice of answer and must be included the right answers."
+}, {
+  title: "Hit Parade",
+  url: "https://hit-parade-react-noeline.netlify.app/",
+  code: "https://github.com/vakodrazan/hit-parade-react",
+  picture: _hitParade.default,
+  id: 1604657686925,
+  description: "In this project, I work with React. It's all about music. You can favourite any music you like that is in the list also, you can add a new one."
+}];
+exports.default = _default;
+},{"../assets/front-end-assessment.png":"assets/front-end-assessment.png","../assets/front-end-final.png":"assets/front-end-final.png","../assets/game-landing-page.png":"assets/game-landing-page.png","../assets/interior-consultant.png":"assets/interior-consultant.png","../assets/my-team-page.png":"assets/my-team-page.png","../assets/ghibli-movie-list.png":"assets/ghibli-movie-list.png","../assets/birthday-app.png":"assets/birthday-app.png","../assets/tea-time-topic.png":"assets/tea-time-topic.png","../assets/random-quote.png":"assets/random-quote.png","../assets/input-component.png":"assets/input-component.png","../assets/button-component.png":"assets/button-component.png","../assets/country-quiz.png":"assets/country-quiz.png","../assets/hit-parade.png":"assets/hit-parade.png"}],"components/Projects.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _designList = _interopRequireDefault(require("../pages/designList"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Projects() {
+  console.log(_designList.default);
+  return /*#__PURE__*/_react.default.createElement("div", null);
+}
+
+var _default = Projects;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../pages/designList":"pages/designList.js"}],"components/Skills.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32174,17 +32350,19 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Header = _interopRequireDefault(require("../components/Header"));
 
+var _Projects = _interopRequireDefault(require("../components/Projects"));
+
 var _Skills = _interopRequireDefault(require("../components/Skills"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Skills.default, null));
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Skills.default, null), /*#__PURE__*/_react.default.createElement(_Projects.default, null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../components/Header":"components/Header.js","../components/Skills":"components/Skills.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/Header":"components/Header.js","../components/Projects":"components/Projects.js","../components/Skills":"components/Skills.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
