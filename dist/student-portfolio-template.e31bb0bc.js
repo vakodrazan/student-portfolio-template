@@ -32116,14 +32116,32 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: #FFFFFF;\n    border-radius: 12px;\n    margin-top: 25px;\n    padding: 23px;\n    color: #4F4F4F;\n\n    h2 {\n        text-transform: uppercase;\n        font-weight: 700;\n        font-size: 18px;\n    }\n\n    .list-item {\n        font-weight: 500;\n        font-size: 16px;\n        padding-top: 10px;\n\n        li {\n            display: flex;\n            flex-direction: row;\n            align-items: center;\n            justify-content: space-between;\n            padding-top: 8px; \n            padding-bottom: 8px; \n\n            .progress-bar {\n                width: 60%;\n                height: 9px;\n                background-color: #C4C4C4;\n                border-radius: 12px;\n\n                &-detail {\n                    background-color: rgba(47, 128, 237, 0.7);\n                    border-radius: 12px;\n                    height: 9px;\n                }\n\n                &-html {\n                    width: 60%;\n                }\n                &-css {\n                    width: 65%;\n                }\n                &-sass {\n                    width: 70%;\n                }\n                &-javascript {\n                    width: 65%;\n                }\n                &-react {\n                    width: 75%;\n                }\n            }\n        }\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var ArticleStyle = _styledComponents.default.article(_templateObject());
+
 function Skills() {
-  return /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Front End")), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "HTML"), /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(ArticleStyle, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Front End")), /*#__PURE__*/_react.default.createElement("ul", {
+    className: "list-item"
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "HTML"), /*#__PURE__*/_react.default.createElement("div", {
     className: "progress-bar"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "progress-bar-detail progress-bar-html"
-  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "css"), /*#__PURE__*/_react.default.createElement("div", {
+  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "CSS"), /*#__PURE__*/_react.default.createElement("div", {
     className: "progress-bar"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "progress-bar-detail progress-bar-css"
@@ -32144,7 +32162,7 @@ function Skills() {
 
 var _default = Skills;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"pages/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"pages/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
