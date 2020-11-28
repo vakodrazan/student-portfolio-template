@@ -20,7 +20,7 @@ function ProjejctList({ design }) {
                     <a href={design.url} alt={design.title} >
                         <button aria-label={`See the demo of ${design.title}`}>Demo</button>
                     </a>
-                    <a href={design.url} alt={design.titles} >
+                    <a href={design.code} alt={design.titles} >
                         <button aria-label={`See the code for ${design.title}`}>Code</button>
                     </a>
                 </div>

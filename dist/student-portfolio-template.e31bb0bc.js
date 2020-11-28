@@ -32299,7 +32299,7 @@ function ProjejctList(_ref) {
   }, /*#__PURE__*/_react.default.createElement("button", {
     "aria-label": "See the demo of ".concat(design.title)
   }, "Demo")), /*#__PURE__*/_react.default.createElement("a", {
-    href: design.url,
+    href: design.code,
     alt: design.titles
   }, /*#__PURE__*/_react.default.createElement("button", {
     "aria-label": "See the code for ".concat(design.title)
