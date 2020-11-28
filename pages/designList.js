@@ -1,16 +1,16 @@
-import frontEndAssessment from "./assets/fea.png";
-import frontEndFinal from "./assets/front-end-final.png";
-import gameLanding from "./assets/game-landing-page.png";
-import interiorConsultant from "./assets/interior-consultant.png";
-import myTeamPage from "./assets/my-team-page.png";
-import ghibliMovieList from "./assets/ghibli-movie-list.png";
-import birthdayApp from "./assets/birthday-app.png";
-import teaTimeTopic from "./assets/tea-time-topic.png";
-import randomQuote from "./assets/random-quote.png";
-import inputComponent from "./assets/input-component.png";
-import buttonComponent from "./assets/button-component.png";
-import countryQuiz from "./assets/country-quiz.png";
-import hitParade from "./assets/hit-parade.png";
+import frontEndAssessment from "../assets/front-end-assessment.png";
+import frontEndFinal from "../assets/front-end-final.png";
+import gameLanding from "../assets/game-landing-page.png";
+import interiorConsultant from "../assets/interior-consultant.png";
+import myTeamPage from "../assets/my-team-page.png";
+import ghibliMovieList from "../assets/ghibli-movie-list.png";
+import birthdayApp from "../assets/birthday-app.png";
+import teaTimeTopic from "../assets/tea-time-topic.png";
+import randomQuote from "../assets/random-quote.png";
+import inputComponent from "../assets/input-component.png";
+import buttonComponent from "../assets/button-component.png";
+import countryQuiz from "../assets/country-quiz.png";
+import hitParade from "../assets/hit-parade.png";
 export default [
     {
         title: "Sports App",
