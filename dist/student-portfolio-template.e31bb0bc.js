@@ -32261,7 +32261,7 @@ var _default = [{
   description: "In this project, I work with React. It's all about music. You can favourite any music you like that is in the list also, you can add a new one."
 }];
 exports.default = _default;
-},{"../assets/front-end-assessment.png":"assets/front-end-assessment.png","../assets/front-end-final.png":"assets/front-end-final.png","../assets/game-landing-page.png":"assets/game-landing-page.png","../assets/interior-consultant.png":"assets/interior-consultant.png","../assets/my-team-page.png":"assets/my-team-page.png","../assets/ghibli-movie-list.png":"assets/ghibli-movie-list.png","../assets/birthday-app.png":"assets/birthday-app.png","../assets/tea-time-topic.png":"assets/tea-time-topic.png","../assets/random-quote.png":"assets/random-quote.png","../assets/input-component.png":"assets/input-component.png","../assets/button-component.png":"assets/button-component.png","../assets/country-quiz.png":"assets/country-quiz.png","../assets/hit-parade.png":"assets/hit-parade.png"}],"components/Projects.js":[function(require,module,exports) {
+},{"../assets/front-end-assessment.png":"assets/front-end-assessment.png","../assets/front-end-final.png":"assets/front-end-final.png","../assets/game-landing-page.png":"assets/game-landing-page.png","../assets/interior-consultant.png":"assets/interior-consultant.png","../assets/my-team-page.png":"assets/my-team-page.png","../assets/ghibli-movie-list.png":"assets/ghibli-movie-list.png","../assets/birthday-app.png":"assets/birthday-app.png","../assets/tea-time-topic.png":"assets/tea-time-topic.png","../assets/random-quote.png":"assets/random-quote.png","../assets/input-component.png":"assets/input-component.png","../assets/button-component.png":"assets/button-component.png","../assets/country-quiz.png":"assets/country-quiz.png","../assets/hit-parade.png":"assets/hit-parade.png"}],"components/ProjejctList.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32271,18 +32271,108 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _designList = _interopRequireDefault(require("../pages/designList"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background-color: #FFFFFF;\n    border-radius: 12px;\n    padding: 15px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var SectionStyle = _styledComponents.default.section(_templateObject());
+
+function ProjejctList(_ref) {
+  var design = _ref.design;
+  return /*#__PURE__*/_react.default.createElement(SectionStyle, null, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: design.picture
+  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("strong", null, design.title), /*#__PURE__*/_react.default.createElement("p", null, design.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: design.url,
+    alt: design.title
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    "aria-label": "See the demo of ".concat(design.title)
+  }, "Demo")), /*#__PURE__*/_react.default.createElement("a", {
+    href: design.url,
+    alt: design.titles
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    "aria-label": "See the code for ".concat(design.title)
+  }, "Code")))));
+}
+
+var _default = ProjejctList;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"components/Projects.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _designList = _interopRequireDefault(require("../pages/designList"));
+
+var _ProjejctList = _interopRequireDefault(require("./ProjejctList"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n    column-gap: 32px;\n    row-gap: 40px;\n    padding-top: 20px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var ArticleStyle = _styledComponents.default.article(_templateObject());
+
 function Projects() {
-  console.log(_designList.default);
-  return /*#__PURE__*/_react.default.createElement("div", null);
+  var _useState = (0, _react.useState)(_designList.default),
+      _useState2 = _slicedToArray(_useState, 2),
+      Alldesigns = _useState2[0],
+      setAllDesigns = _useState2[1];
+
+  return /*#__PURE__*/_react.default.createElement(ArticleStyle, null, Alldesigns.map(function (design) {
+    return /*#__PURE__*/_react.default.createElement(_ProjejctList.default, {
+      key: design.id,
+      design: design
+    });
+  }));
 }
 
 var _default = Projects;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../pages/designList":"pages/designList.js"}],"components/Skills.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../pages/designList":"pages/designList.js","./ProjejctList":"components/ProjejctList.js"}],"components/Skills.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
