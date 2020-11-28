@@ -27,33 +27,8 @@ const ArticleStyle = styled.article`
             padding-top: 8px; 
             padding-bottom: 8px; 
 
-            .progress-bar {
+            progress {
                 width: 60%;
-                height: 9px;
-                background-color: #C4C4C4;
-                border-radius: 12px;
-
-                &-detail {
-                    background-color: rgba(47, 128, 237, 0.7);
-                    border-radius: 12px;
-                    height: 9px;
-                }
-
-                &-html {
-                    width: 60%;
-                }
-                &-css {
-                    width: 65%;
-                }
-                &-sass {
-                    width: 70%;
-                }
-                &-javascript {
-                    width: 65%;
-                }
-                &-react {
-                    width: 75%;
-                }
             }
         }
     }
@@ -68,34 +43,24 @@ function Skills() {
 
             <ul className="list-item">
                 <li>
-                    <span>HTML</span>
-                    <div className="progress-bar">
-                        <div className="progress-bar-detail progress-bar-html"></div>
-                    </div>
+                    <label>HTML</label>
+                    <progress id="file" value="60" max="100"> 60% </progress>
                 </li>
                 <li>
-                    <span>CSS</span>
-                    <div className="progress-bar">
-                        <div className="progress-bar-detail progress-bar-css"></div>
-                    </div>
+                    <label>CSS</label>
+                    <progress id="file" value="65" max="100"> 65% </progress>
                 </li>
                 <li>
-                    <span>SASS</span>
-                    <div className="progress-bar">
-                        <div className="progress-bar-detail progress-bar-sass"></div>
-                    </div>
+                    <label>SASS</label>
+                    <progress id="file" value="68" max="100"> 68% </progress>
                 </li>
                 <li>
-                    <span>JAVASCRIPT</span>
-                    <div className="progress-bar">
-                        <div className="progress-bar-detail progress-bar-javascript"></div>
-                    </div>
+                    <label>JAVASCRIPT</label>
+                    <progress id="file" value="70" max="100"> 70% </progress>
                 </li>
                 <li>
-                    <span>REACT</span>
-                    <div className="progress-bar">
-                        <div className="progress-bar-detail progress-bar-react"></div>
-                    </div>
+                    <label>REACT</label>
+                    <progress id="file" value="60" max="100"> 60% </progress>
                 </li>
             </ul>
         </ArticleStyle>

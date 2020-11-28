@@ -32387,7 +32387,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: #FFFFFF;\n    border-radius: 12px;\n    margin-top: 25px;\n    padding: 23px;\n    color: #4F4F4F;\n\n    h2 {\n        text-transform: uppercase;\n        font-weight: 700;\n        font-size: 18px;\n    }\n\n    .list-item {\n        font-weight: 500;\n        font-size: 16px;\n        padding-top: 10px;\n\n        li {\n            display: flex;\n            flex-direction: row;\n            align-items: center;\n            justify-content: space-between;\n            padding-top: 8px; \n            padding-bottom: 8px; \n\n            .progress-bar {\n                width: 60%;\n                height: 9px;\n                background-color: #C4C4C4;\n                border-radius: 12px;\n\n                &-detail {\n                    background-color: rgba(47, 128, 237, 0.7);\n                    border-radius: 12px;\n                    height: 9px;\n                }\n\n                &-html {\n                    width: 60%;\n                }\n                &-css {\n                    width: 65%;\n                }\n                &-sass {\n                    width: 70%;\n                }\n                &-javascript {\n                    width: 65%;\n                }\n                &-react {\n                    width: 75%;\n                }\n            }\n        }\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: #FFFFFF;\n    border-radius: 12px;\n    margin-top: 25px;\n    padding: 23px;\n    color: #4F4F4F;\n\n    h2 {\n        text-transform: uppercase;\n        font-weight: 700;\n        font-size: 18px;\n    }\n\n    .list-item {\n        font-weight: 500;\n        font-size: 16px;\n        padding-top: 10px;\n\n        li {\n            display: flex;\n            flex-direction: row;\n            align-items: center;\n            justify-content: space-between;\n            padding-top: 8px; \n            padding-bottom: 8px; \n\n            progress {\n                width: 60%;\n            }\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32403,27 +32403,27 @@ var ArticleStyle = _styledComponents.default.article(_templateObject());
 function Skills() {
   return /*#__PURE__*/_react.default.createElement(ArticleStyle, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Front End")), /*#__PURE__*/_react.default.createElement("ul", {
     className: "list-item"
-  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "HTML"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar-detail progress-bar-html"
-  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "CSS"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar-detail progress-bar-css"
-  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "SASS"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar-detail progress-bar-sass"
-  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "JAVASCRIPT"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar-detail progress-bar-javascript"
-  }))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("span", null, "REACT"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress-bar-detail progress-bar-react"
-  })))));
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", null, "HTML"), /*#__PURE__*/_react.default.createElement("progress", {
+    id: "file",
+    value: "60",
+    max: "100"
+  }, " 60% ")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", null, "CSS"), /*#__PURE__*/_react.default.createElement("progress", {
+    id: "file",
+    value: "65",
+    max: "100"
+  }, " 65% ")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", null, "SASS"), /*#__PURE__*/_react.default.createElement("progress", {
+    id: "file",
+    value: "68",
+    max: "100"
+  }, " 68% ")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", null, "JAVASCRIPT"), /*#__PURE__*/_react.default.createElement("progress", {
+    id: "file",
+    value: "70",
+    max: "100"
+  }, " 70% ")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", null, "REACT"), /*#__PURE__*/_react.default.createElement("progress", {
+    id: "file",
+    value: "60",
+    max: "100"
+  }, " 60% "))));
 }
 
 var _default = Skills;
