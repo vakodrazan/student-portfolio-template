@@ -4,10 +4,12 @@ import designs from "../pages/designList";
 import ProjejctList from './ProjejctList';
 
 const ArticleStyle = styled.article`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    column-gap: 32px;
-    row-gap: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    margin-right: -2rem;
     padding-top: 20px;
 `;
 

@@ -5,6 +5,8 @@ const SectionStyle = styled.section`
     background-color: #FFFFFF;
     border-radius: 12px;
     padding: 15px;
+    margin-left: 20px;
+    max-width: 30%;
 
     .heading {
         padding-bottom: 22px;
@@ -21,14 +23,15 @@ const SectionStyle = styled.section`
         color: #828282;
         padding-top: 18px;
         padding-bottom: 40px;
+        width: 210px;
     }
 
     .buttons {
         border-radius: 12px;
         padding-top: 13px;
         padding-bottom: 11px;
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
         border: none;
         
         &-demo {

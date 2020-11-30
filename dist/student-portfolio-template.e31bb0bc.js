@@ -32276,7 +32276,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background-color: #FFFFFF;\n    border-radius: 12px;\n    padding: 15px;\n\n    .heading {\n        padding-bottom: 22px;\n    }\n\n    .title {\n        font-weight: 500;\n        font-size: 24px;\n    }\n\n    .description {\n        font-weight: 500;\n        font-size: 16px;\n        color: #828282;\n        padding-top: 18px;\n        padding-bottom: 40px;\n    }\n\n    .buttons {\n        border-radius: 12px;\n        padding-top: 13px;\n        padding-bottom: 11px;\n        padding-right: 40px;\n        padding-left: 40px;\n        border: none;\n        \n        &-demo {\n            background-color: #5C94E1;\n            color: #fff;\n            margin-right: 11px;\n        }\n        &-code {\n            border: 1px solid #5C94E1;  \n            background-color: #fff; \n            color: #5C94E1;\n\n            &:hover {\n                background-color: #F2F2F2;\n            }\n        }\n\n        &:hover {\n            outline: none;\n            opacity: 0.9;\n        }\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background-color: #FFFFFF;\n    border-radius: 12px;\n    padding: 15px;\n    margin-left: 20px;\n    max-width: 30%;\n\n    .heading {\n        padding-bottom: 22px;\n    }\n\n    .title {\n        font-weight: 500;\n        font-size: 24px;\n    }\n\n    .description {\n        font-weight: 500;\n        font-size: 16px;\n        color: #828282;\n        padding-top: 18px;\n        padding-bottom: 40px;\n        width: 210px;\n    }\n\n    .buttons {\n        border-radius: 12px;\n        padding-top: 13px;\n        padding-bottom: 11px;\n        padding-right: 20px;\n        padding-left: 20px;\n        border: none;\n        \n        &-demo {\n            background-color: #5C94E1;\n            color: #fff;\n            margin-right: 11px;\n        }\n        &-code {\n            border: 1px solid #5C94E1;  \n            background-color: #fff; \n            color: #5C94E1;\n\n            &:hover {\n                background-color: #F2F2F2;\n            }\n        }\n\n        &:hover {\n            outline: none;\n            opacity: 0.9;\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32351,7 +32351,7 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n    column-gap: 32px;\n    row-gap: 40px;\n    padding-top: 20px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    overflow-x: scroll;\n    margin-right: -2rem;\n    padding-top: 20px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
