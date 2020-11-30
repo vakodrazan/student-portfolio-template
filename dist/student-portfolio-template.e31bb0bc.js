@@ -32216,7 +32216,7 @@ var _default = [{
   code: "https://github.com/vakodrazan/birthday-app",
   picture: _birthdayApp.default,
   id: 1604657646561,
-  description: "In this project, I work with Vanilla Javascript. It is all about, adding a new item to list, deleting and editing"
+  description: "In this project, I work with Vanilla Javascript. You can see any list item. It is all about, adding a new item to list. It allows to delete any item and edit as well.  "
 }, {
   title: "Tea Time Topic",
   url: "https://react-tea-time-topic.netlify.app/",
@@ -32276,7 +32276,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background-color: #FFFFFF;\n    border-radius: 12px;\n    padding: 15px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    background-color: #FFFFFF;\n    border-radius: 12px;\n    padding: 15px;\n\n    .heading {\n        padding-bottom: 22px;\n    }\n\n    .title {\n        font-weight: 500;\n        font-size: 24px;\n    }\n\n    .description {\n        font-weight: 500;\n        font-size: 16px;\n        color: #828282;\n        padding-top: 18px;\n        padding-bottom: 40px;\n    }\n\n    .buttons {\n        border-radius: 12px;\n        padding-top: 13px;\n        padding-bottom: 11px;\n        padding-right: 40px;\n        padding-left: 40px;\n        border: none;\n        \n        &-demo {\n            background-color: #5C94E1;\n            color: #fff;\n            margin-right: 11px;\n        }\n        &-code {\n            border: 1px solid #5C94E1;  \n            background-color: #fff; \n            color: #5C94E1;\n\n            &:hover {\n                background-color: #F2F2F2;\n            }\n        }\n\n        &:hover {\n            outline: none;\n            opacity: 0.9;\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32291,17 +32291,25 @@ var SectionStyle = _styledComponents.default.section(_templateObject());
 
 function ProjejctList(_ref) {
   var design = _ref.design;
-  return /*#__PURE__*/_react.default.createElement(SectionStyle, null, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("img", {
+  return /*#__PURE__*/_react.default.createElement(SectionStyle, null, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "heading"
+  }, /*#__PURE__*/_react.default.createElement("img", {
     src: design.picture
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("strong", null, design.title), /*#__PURE__*/_react.default.createElement("p", null, design.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
+  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("strong", {
+    className: "title"
+  }, design.title), /*#__PURE__*/_react.default.createElement("p", {
+    className: "description"
+  }, design.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
     href: design.url,
     alt: design.title
   }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "buttons buttons-demo",
     "aria-label": "See the demo of ".concat(design.title)
   }, "Demo")), /*#__PURE__*/_react.default.createElement("a", {
     href: design.code,
     alt: design.titles
   }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "buttons buttons-code",
     "aria-label": "See the code for ".concat(design.title)
   }, "Code")))));
 }
@@ -32492,7 +32500,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50108" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59817" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

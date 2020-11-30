@@ -66,7 +66,7 @@ export default [
         code: "https://github.com/vakodrazan/birthday-app",
         picture: birthdayApp,
         id: 1604657646561,
-        description: "In this project, I work with Vanilla Javascript. It is all about, adding a new item to list, deleting and editing",
+        description: "In this project, I work with Vanilla Javascript. You can see any list item. It is all about, adding a new item to list. It allows to delete any item and edit as well.  ",
     },
     {
         title: "Tea Time Topic",
